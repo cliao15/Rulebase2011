@@ -1,0 +1,22 @@
+#!/bin/bash
+#This is a bash script used to initialise database Ruba11DB
+
+#set your own hostname, username and password
+#export as environment variables
+
+#database name
+DATABASE="Rulebase2011DB";
+
+#create database	
+#replace root with $USER if necessary
+mysql -u root -e "DROP DATABASE IF EXISTS $DATABASE;CREATE DATABASE $DATABASE";
+
+#set SQL file directory
+dir="./"
+
+#collect all .sql files
+for file in $(find $dir -name "*.sql" -type f)
+do
+	echo "import file: $file";
+	mysql $DATABASE < $file -u root 
+done
