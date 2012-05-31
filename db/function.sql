@@ -31,7 +31,7 @@ INSERT INTO function (name,parameters,expression) VALUES
 	('iso_uni_uni','Vmf,Keq,Kms,Kmp,Kiip,S,P','Vmf*(S-P/Keq)/(Kms*(1+P/Kmp)+S*(1+P/Kiip))'),
 
 #	Ordered-Bi-Bi
-	('ordered_bi_bi','Vm,Ksa,Ksb,Kma,A,B','Vm/(Ksa*Ksb/A/B+Kma/A+Kmb/B+1)'),
+	('ordered_bi_bi','Vm,Ksa,Ksb,Kma,Kmb,A,B','Vm/(Ksa*Ksb/A/B+Kma/A+Kmb/B+1)'),
 
 #	Ping-Pong-Bi-Bi
 	('ping_pong_bi_bi','Vm,Kma,Kmb,A,B','Vm/(Kma/A+Kmb/B+1)'),
