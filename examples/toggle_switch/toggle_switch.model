@@ -21,8 +21,8 @@ Ecoli		Medium		toggle_switch	V	N
 
 <seedspecies>
 Medium	iptg	nb:i0001(laci)	iptg_init
-Ecoli	dna1	d:r0040(tetr1,tetr2)-b0034(rib)-c0012(dna,iptg,dim)-b0014()  dna1_init
-Ecoli	dna2	d:r0010(laci1,laci2)-b0034(rib)-c0040(dna,atc,dim)-b0014()	 dna2_init
+Ecoli	dna1	d:r0040(tetr1,tetr2)-b0034()-c0012(dna,iptg,dim)-b0014()  dna1_init
+Ecoli	dna2	d:r0010(laci1,laci2)-b0034()-c0040(dna,atc,dim)-b0014()	 dna2_init
 </seedspecies>
 
 <events>
