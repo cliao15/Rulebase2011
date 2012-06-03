@@ -69,11 +69,7 @@ INSERT INTO toggle_switch (name,reactant_patterns,product_patterns,is_reversible
 #	Degradation of RNAs
 #	------------------------------
 	
-	#	laci mRNA
-	('degradation_mRNA_laci','r:X1-c0012()-X2','','False','mass_action_1(0.005783,#1)',NULL),
-
-	#	tetr mRNA1
-	('degradation_mRNA_tetr','r:X1-c0040()-X2','','False','mass_action_1(0.005783,#1)',NULL),
+	('degradation_mRNA','r:X','','False','mass_action_1(0.005783,#1)',NULL),
 
 #	------------------------------
 #	Degradation of Proteins

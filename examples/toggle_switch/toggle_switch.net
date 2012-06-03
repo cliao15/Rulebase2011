@@ -16,21 +16,20 @@
    14  rule13_k       5.000e-01  
    15  rule17_k       1.155e-02  
    16  rule18_k       5.783e-03  
-   17  rule19_k       5.783e-03  
-   18  rule7_k        1.000e+06  
-   19  rule9_k        1.250e+07  
-   20  rule20_k       2.310e-03  
-   21  rule3_k        1.790e+07  
-   22  rule21_k       2.310e-03  
-   23  rule8_k        2.000e-01  
-   24  rule10_k       1.000e+01  
-   25  rule11_k       2.000e+10  
-   26  rule4_k        1.000e+01  
-   27  rule5_k        1.000e+08  
-   28  rule12_k       4.000e-02  
-   29  rule14_k       5.000e-04  
-   30  rule6_k        1.000e-02  
-   31  rule16_k       5.000e-04  
+   17  rule7_k        1.000e+06  
+   18  rule9_k        1.250e+07  
+   19  rule19_k       2.310e-03  
+   20  rule3_k        1.790e+07  
+   21  rule20_k       2.310e-03  
+   22  rule8_k        2.000e-01  
+   23  rule10_k       1.000e+01  
+   24  rule11_k       2.000e+10  
+   25  rule4_k        1.000e+01  
+   26  rule5_k        1.000e+08  
+   27  rule12_k       4.000e-02  
+   28  rule14_k       5.000e-04  
+   29  rule6_k        1.000e-02  
+   30  rule16_k       5.000e-04  
 </parameters>
 <compartments>
     1  Medium   (R)     0.400  1   #  medium        
@@ -75,10 +74,9 @@
    15    (d:X3*-b0014*()-X2*!<-r0040*(tetr1,tetr2)-X1*)    ->    r:X2      rule15_k*#1    #  transcription_pTet          
    16    (d:X3*-b0014*()-X2*!<-r0040*(tetr1!+,tetr2!+)-X1*)    ->    r:X2      rule16_k*#1    #  transcription_pTet_leakness 
    17    (r:X1-b0034()-X2!1-X3)    ->    p:X2      rule17_k*#1    #  translation_rbs_b0034       
-   18    r:X1-c0012()-X2    ->      rule18_k*#1    #  degradation_mRNA_laci       
-   19    r:X1-c0040()-X2    ->      rule19_k*#1    #  degradation_mRNA_tetr       
-   20    p:c0012(dim)    ->      rule20_k*#1    #  degradation_prot_LacI       
-   21    p:c0040(dim)    ->      rule21_k*#1    #  degradation_prot_TetR       
+   18    r:X    ->      rule18_k*#1    #  degradation_mRNA            
+   19    p:c0012(dim)    ->      rule19_k*#1    #  degradation_prot_LacI       
+   20    p:c0040(dim)    ->      rule20_k*#1    #  degradation_prot_TetR       
 </rules>
 <reactions>
     1  r1        (s4)    ->    iptg        N*transp0_pout*s4  
@@ -90,16 +88,16 @@
     7  r7        (s5)    ->    s7          rule17_k*s5    #17
     8  r8          s5    ->                rule18_k*s5    #18
     9  r9        (s6)    ->    s8          rule17_k*s6    #17
-   10  r10         s6    ->                rule19_k*s6    #19
+   10  r10         s6    ->                rule18_k*s6    #18
    11  r11     s7  +  s4    ->    s9          rule7_k*s7*s4    #7
    12  r12     s7  +  s7    ->    s10         0.500 * ( rule9_k*s7*s7 )    #9
-   13  r13         s7    ->                rule20_k*s7    #20
+   13  r13         s7    ->                rule19_k*s7    #19
    14  r14     s8  +  s8    ->    s11         0.500 * ( rule3_k*s8*s8 )    #3
-   15  r15         s8    ->                rule21_k*s8    #21
+   15  r15         s8    ->                rule20_k*s8    #20
    16  r16         s9    ->    s4  +  s7      rule8_k*s9    #8
    17  r17     s7  +  s9    ->    s12         rule9_k*s7*s9    #9
    18  r18     s9  +  s9    ->    s13         0.500 * ( rule9_k*s9*s9 )    #9
-   19  r19         s9    ->    s4          rule20_k*s9    #20
+   19  r19         s9    ->    s4          rule19_k*s9    #19
    20  r20     s10  +  s4    ->    s12         2.000 * ( rule7_k*s10*s4 )    #7
    21  r21        s10    ->    s7  +  s7      rule10_k*s10    #10
    22  r22     s10  +  dna2    ->    s14         rule11_k*s10*dna2    #11

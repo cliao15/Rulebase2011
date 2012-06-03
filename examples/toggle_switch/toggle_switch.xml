@@ -39,12 +39,11 @@
       <parameter id="rule13_k" value="0.5"/>
       <parameter id="rule17_k" value="0.01155"/>
       <parameter id="rule18_k" value="0.005783"/>
-      <parameter id="rule19_k" value="0.005783"/>
       <parameter id="rule7_k" value="1000000"/>
       <parameter id="rule9_k" value="12500000"/>
-      <parameter id="rule20_k" value="0.00231"/>
+      <parameter id="rule19_k" value="0.00231"/>
       <parameter id="rule3_k" value="17900000"/>
-      <parameter id="rule21_k" value="0.00231"/>
+      <parameter id="rule20_k" value="0.00231"/>
       <parameter id="rule8_k" value="0.2"/>
       <parameter id="rule10_k" value="10"/>
       <parameter id="rule11_k" value="20000000000"/>
@@ -271,7 +270,7 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule19_k </ci>
+              <ci> rule18_k </ci>
               <ci> s6 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -327,7 +326,7 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule20_k </ci>
+              <ci> rule19_k </ci>
               <ci> s7 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -363,7 +362,7 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule21_k </ci>
+              <ci> rule20_k </ci>
               <ci> s8 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -441,7 +440,7 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule20_k </ci>
+              <ci> rule19_k </ci>
               <ci> s9 </ci>
               <ci> Ecoli </ci>
             </apply>
