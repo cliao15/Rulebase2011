@@ -4,12 +4,12 @@
     2  f              1.000e+00  
     3  Ve             4.000e-01   #	f*0.4
     4  V              7.000e-16   #	f*7e-16
-    5  N              1.000e+00  
+    5  N              1.000e+02  
     6  iptg_init      0.000e+00  
     7  dna1_init      2.373e-09   #	1/NA/V
     8  dna2_init      2.373e-09   #	1/NA/V
     9  pulse1_start   1.000e+04  
-   10  pulse1_conc    1.000e-04  
+   10  pulse1_conc    1.000e-03  
    11  transp0_pout   1.000e-01  
    12  transp0_pin    1.000e-01  
    13  rule15_k       5.000e-01  
@@ -17,7 +17,7 @@
    15  rule17_k       1.155e-02  
    16  rule18_k       5.783e-03  
    17  rule19_k       5.783e-03  
-   18  rule7_k        1.540e+05  
+   18  rule7_k        1.000e+06  
    19  rule9_k        1.250e+07  
    20  rule20_k       2.310e-03  
    21  rule3_k        1.790e+07  
@@ -34,17 +34,17 @@
 </parameters>
 <compartments>
     1  Medium   (R)     0.400  1   #  medium        
-    2  Ecoli    Medium  0.000  1   #  toggle_switch 
+    2  Ecoli    Medium  0.000  100   #  toggle_switch 
 </compartments>
 <species>
   #  Medium
     1  iptg   0.000e+00    nb:i0001(laci)    #  Seed  
   #  Ecoli
-    2  dna1   2.373e-09    d:b0014*()-c0012*(dim,dna,iptg)-b0034*(rib)-r0040*(tetr1,tetr2)    #  Seed  
-    3  dna2   2.373e-09    d:b0014*()-c0040*(atc,dim,dna)-b0034*(rib)-r0010*(laci1,laci2)    #  Seed  
+    2  dna1   2.373e-09    d:b0014*()-c0012*(dim,dna,iptg)-b0034*()-r0040*(tetr1,tetr2)    #  Seed  
+    3  dna2   2.373e-09    d:b0014*()-c0040*(atc,dim,dna)-b0034*()-r0010*(laci1,laci2)    #  Seed  
     4  s4     0.000e+00    nb:i0001(laci)  
-    5  s5     0.000e+00    r:b0034(rib)-c0012(dim,dna,iptg)  
-    6  s6     0.000e+00    r:b0034(rib)-c0040(atc,dim,dna)  
+    5  s5     0.000e+00    r:b0034()-c0012(dim,dna,iptg)  
+    6  s6     0.000e+00    r:b0034()-c0040(atc,dim,dna)  
     7  s7     0.000e+00    p:c0012(dim,dna,iptg)  
     8  s8     0.000e+00    p:c0040(atc,dim,dna)  
     9  s9     0.000e+00    nb:i0001(laci!1).p:c0012(dim,dna,iptg!1)  
@@ -52,8 +52,8 @@
    11  s11    0.000e+00    p:c0040(atc,dim!1,dna).p:c0040(atc,dim!1,dna)  
    12  s12    0.000e+00    nb:i0001(laci!1).p:c0012(dim!2,dna,iptg!1).p:c0012(dim!2,dna,iptg)  
    13  s13    0.000e+00    nb:i0001(laci!1).nb:i0001(laci!2).p:c0012(dim!3,dna,iptg!1).p:c0012(dim!3,dna,iptg!2)  
-   14  s14    0.000e+00    d:b0014*()-c0040*(atc,dim,dna)-b0034*(rib)-r0010*(laci1!1,laci2!2).p:c0012(dim!3,dna!1,iptg).p:c0012(dim!3,dna!2,iptg)  
-   15  s15    0.000e+00    d:b0014*()-c0012*(dim,dna,iptg)-b0034*(rib)-r0040*(tetr1!1,tetr2!2).p:c0040(atc,dim!3,dna!1).p:c0040(atc,dim!3,dna!2)  
+   14  s14    0.000e+00    d:b0014*()-c0040*(atc,dim,dna)-b0034*()-r0010*(laci1!1,laci2!2).p:c0012(dim!3,dna!1,iptg).p:c0012(dim!3,dna!2,iptg)  
+   15  s15    0.000e+00    d:b0014*()-c0012*(dim,dna,iptg)-b0034*()-r0040*(tetr1!1,tetr2!2).p:c0040(atc,dim!3,dna!1).p:c0040(atc,dim!3,dna!2)  
 </species>
 <events>
     1  pulse1   time>pulse1_start    iptg=pulse1_conc  

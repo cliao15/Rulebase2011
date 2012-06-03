@@ -6,12 +6,12 @@ NA				6.02e23		#	Avogadro
 f				1
 Ve				f*0.4		#	L
 V				f*7e-16		#	L
-N				1	
+N				100	
 iptg_init		0.0
 dna1_init		1/NA/V		#	M	
 dna2_init		1/NA/V		#	M	
 pulse1_start	10000		#	sec
-pulse1_conc		1e-4		#	M
+pulse1_conc		0.001		#	M
 </parameters>
 
 <compartments>

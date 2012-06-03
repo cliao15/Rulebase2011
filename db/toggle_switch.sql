@@ -34,7 +34,7 @@ INSERT INTO toggle_switch (name,reactant_patterns,product_patterns,is_reversible
 #	---------------
 
 	#	IPTG binds to LacI
-	('binding_LacI_IPTG','p:c0012(iptg,dna);nb:i0001(laci)','p:c0012(iptg!1,dna).nb:i0001(laci!1)','True','mass_action_2(1.54e5,#1,#2)','mass_action_1(0.2,#1)'),
+	('binding_LacI_IPTG','p:c0012(iptg,dna);nb:i0001(laci)','p:c0012(iptg!1,dna).nb:i0001(laci!1)','True','mass_action_2(1e6,#1,#2)','mass_action_1(0.2,#1)'),
 
 	#	LacI dimerize
 	('dimerization_LacI','p:c0012(dim,dna);p:c0012(dim,dna)','p:c0012(dim!1,dna).p:c0012(dim!1,dna)','True','mass_action_2(1.25e7,#1,#2)','mass_action_1(10,#1)'),

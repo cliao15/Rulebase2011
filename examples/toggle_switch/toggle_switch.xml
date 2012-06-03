@@ -7,11 +7,11 @@
     </listOfCompartments>
     <listOfSpecies>
       <species id="iptg" name="nb:i0001(laci)" compartment="Medium" initialConcentration="0"/>
-      <species id="dna1" name="d:b0014*()-c0012*(dim,dna,iptg)-b0034*(rib)-r0040*(tetr1,tetr2)" compartment="Ecoli" initialConcentration="2.37304224015187e-09"/>
-      <species id="dna2" name="d:b0014*()-c0040*(atc,dim,dna)-b0034*(rib)-r0010*(laci1,laci2)" compartment="Ecoli" initialConcentration="2.37304224015187e-09"/>
+      <species id="dna1" name="d:b0014*()-c0012*(dim,dna,iptg)-b0034*()-r0040*(tetr1,tetr2)" compartment="Ecoli" initialConcentration="2.37304224015187e-09"/>
+      <species id="dna2" name="d:b0014*()-c0040*(atc,dim,dna)-b0034*()-r0010*(laci1,laci2)" compartment="Ecoli" initialConcentration="2.37304224015187e-09"/>
       <species id="s4" name="nb:i0001(laci)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s5" name="r:b0034(rib)-c0012(dim,dna,iptg)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s6" name="r:b0034(rib)-c0040(atc,dim,dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s5" name="r:b0034()-c0012(dim,dna,iptg)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s6" name="r:b0034()-c0040(atc,dim,dna)" compartment="Ecoli" initialConcentration="0"/>
       <species id="s7" name="p:c0012(dim,dna,iptg)" compartment="Ecoli" initialConcentration="0"/>
       <species id="s8" name="p:c0040(atc,dim,dna)" compartment="Ecoli" initialConcentration="0"/>
       <species id="s9" name="nb:i0001(laci!1).p:c0012(dim,dna,iptg!1)" compartment="Ecoli" initialConcentration="0"/>
@@ -19,20 +19,20 @@
       <species id="s11" name="p:c0040(atc,dim!1,dna).p:c0040(atc,dim!1,dna)" compartment="Ecoli" initialConcentration="0"/>
       <species id="s12" name="nb:i0001(laci!1).p:c0012(dim!2,dna,iptg!1).p:c0012(dim!2,dna,iptg)" compartment="Ecoli" initialConcentration="0"/>
       <species id="s13" name="nb:i0001(laci!1).nb:i0001(laci!2).p:c0012(dim!3,dna,iptg!1).p:c0012(dim!3,dna,iptg!2)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s14" name="d:b0014*()-c0040*(atc,dim,dna)-b0034*(rib)-r0010*(laci1!1,laci2!2).p:c0012(dim!3,dna!1,iptg).p:c0012(dim!3,dna!2,iptg)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s15" name="d:b0014*()-c0012*(dim,dna,iptg)-b0034*(rib)-r0040*(tetr1!1,tetr2!2).p:c0040(atc,dim!3,dna!1).p:c0040(atc,dim!3,dna!2)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s14" name="d:b0014*()-c0040*(atc,dim,dna)-b0034*()-r0010*(laci1!1,laci2!2).p:c0012(dim!3,dna!1,iptg).p:c0012(dim!3,dna!2,iptg)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s15" name="d:b0014*()-c0012*(dim,dna,iptg)-b0034*()-r0040*(tetr1!1,tetr2!2).p:c0040(atc,dim!3,dna!1).p:c0040(atc,dim!3,dna!2)" compartment="Ecoli" initialConcentration="0"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="NA" value="6.02e+23"/>
       <parameter id="f" value="1"/>
       <parameter id="Ve" value="0" constant="false"/>
       <parameter id="V" value="0" constant="false"/>
-      <parameter id="N" value="1"/>
+      <parameter id="N" value="100"/>
       <parameter id="iptg_init" value="0"/>
       <parameter id="dna1_init" value="0" constant="false"/>
       <parameter id="dna2_init" value="0" constant="false"/>
       <parameter id="pulse1_start" value="10000"/>
-      <parameter id="pulse1_conc" value="0.0001"/>
+      <parameter id="pulse1_conc" value="0.001"/>
       <parameter id="transp0_pout" value="0.1"/>
       <parameter id="transp0_pin" value="0.1"/>
       <parameter id="rule15_k" value="0.5"/>
@@ -40,7 +40,7 @@
       <parameter id="rule17_k" value="0.01155"/>
       <parameter id="rule18_k" value="0.005783"/>
       <parameter id="rule19_k" value="0.005783"/>
-      <parameter id="rule7_k" value="154000"/>
+      <parameter id="rule7_k" value="1000000"/>
       <parameter id="rule9_k" value="12500000"/>
       <parameter id="rule20_k" value="0.00231"/>
       <parameter id="rule3_k" value="17900000"/>
