@@ -27,26 +27,5 @@ INSERT INTO function (name,parameters,expression) VALUES
 #	Henri-Michaelis-Menten
 	('henri_michaelis_menten','kcat,E0,Km,S','kcat*E0*S/(Km+S)'),
 
-#	Iso-Uni-UNi
-	('iso_uni_uni','Vmf,Keq,Kms,Kmp,Kiip,S,P','Vmf*(S-P/Keq)/(Kms*(1+P/Kmp)+S*(1+P/Kiip))'),
-
 #	Ordered-Bi-Bi
-	('ordered_bi_bi','Vm,Ksa,Ksb,Kma,Kmb,A,B','Vm/(Ksa*Ksb/A/B+Kma/A+Kmb/B+1)'),
-
-#	Ping-Pong-Bi-Bi
-	('ping_pong_bi_bi','Vm,Kma,Kmb,A,B','Vm/(Kma/A+Kmb/B+1)'),
-
-#	Competitive-Inhibition
-	('competitive_inhibition','Vm,Km,Ki,S,I','Vm*S/(Km*(1+I/Ki)+S)'),
-
-#	NonCompetitive-Inhibition
-	('noncompetitive_inhibition','Vm,Ks,Ki,S,I','Vm*S/((Ks+S)*(1+I/Ki))'),
-
-#	UnCompetitive-Inhibition
-	('uncompetitive_inhibition','Vm,Km,Ki,S,I','Vm*S/(Km+S*(1+I/Ki))'),
-
-#	Enzyme-inactive-active
-	('enzyme_inactive_active','K1,K2,x,y','x*K1*(1-y)/(1-y+K2)'),
-
-#	Enzyme-active-inactive
-	('enzyme_active_inactive','K1,K2,x,y','x*K1*y/(y+K2)');
+	('ordered_bi_bi','kcat,E0,Kma,Kmb,Ks,A,B','kcat*E0/(Kma/A+Kmb/B+Ks/A/B+1)');
