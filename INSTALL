@@ -3,14 +3,14 @@ Chen Liao, June, 2012.
                        INSTALLATION of Rulebase2011
 
 -------------------------------------------------------------------------------------------------------------
-A. The required perl packages
+A.	The required perl packages
 -------------------------------------------------------------------------------------------------------------
 
 1.	Install LibSBML. 
 	Please refer to http://sbml.org/Software/libSBML/docs/java-api/libsbml-installation.html when installing
 	perl bindings of LibSBML. Type in ./configure --with-perl to configure installation.
 
-2.  Install perl modules Regexp::Common, Parse::BooleanLogic, and Math::Expression::Evaluator. 
+2.	Install perl modules Regexp::Common, Parse::BooleanLogic, and Math::Expression::Evaluator. 
 	Download and unpack the source file. Then type in (1) perl Makefile.PL (2) make (3) sudo make install
 	for compilation and installation.
 
@@ -23,24 +23,24 @@ A. The required perl packages
 	If it does not work, try to install libdi-perl and libdbd-mysql-perl in advance.
 
 -------------------------------------------------------------------------------------------------------------
-B. The perl connection with MySQL database
+B.	The perl connection with MySQL database
 -------------------------------------------------------------------------------------------------------------
 
-1. Download and Install MySQL (https://help.ubuntu.com/8.04/serverguide/C/mysql.html). 
+1.	Download and Install MySQL (https://help.ubuntu.com/8.04/serverguide/C/mysql.html). 
 
-2. Executing file "configure" in the "db" directory to initialize the database for later use. Make sure mysql
-   database can be asscced with the correct username and password.
+2.	Executing file "configure" in the "db" directory to initialize the database for later use. Make sure mysql	
+	database can be asscced with the correct username and password.
 
 -------------------------------------------------------------------------------------------------------------
-C. Tesing and Running examples
+C.	Tesing and Running examples
 -------------------------------------------------------------------------------------------------------------
 
-1. Examples in the directory "expample" include two BioNetGen models (more such models can be found at 
-   http://bionetgen.org/index.php/Model_Examples) and two synthetic biological systems. 
+1.	Examples in the directory "expample" include two BioNetGen models (more such models can be found at 
+	http://bionetgen.org/index.php/Model_Examples) and two synthetic biological systems. 
    
-2. Type in ../../src/Rulebase2011.pl {model_name}.model to run examples. 
+2.	Type in ../../src/Rulebase2011.pl {model_name}.model to run examples. 
 
 -------------------------------------------------------------------------------------------------------------
-D. Please report bugs, problems or suggestions to liaochen1988@gmail.com.
+D.	Please report bugs, problems or suggestions to liaochen1988@gmail.com.
 -------------------------------------------------------------------------------------------------------------
 
