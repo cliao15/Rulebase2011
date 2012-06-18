@@ -5,7 +5,6 @@ Chen Liao, June, 2012.
 --------------------------------------------------------------------------------------------------------------------
 A.	The required perl packages
 --------------------------------------------------------------------------------------------------------------------
-A.	The required perl packages
 
 1.	Install LibSBML. 
 	Please refer to http://sbml.org/Software/libSBML/docs/java-api/libsbml-installation.html when installing
@@ -24,10 +23,8 @@ A.	The required perl packages
 	If it does not work, try to install libdi-perl and libdbd-mysql-perl in advance.
 
 --------------------------------------------------------------------------------------------------------------------
-A.	The required perl packages
 B.	The perl connection with MySQL database
 --------------------------------------------------------------------------------------------------------------------
-A.	The required perl packages
 
 1.	Download and Install MySQL (https://help.ubuntu.com/8.04/serverguide/C/mysql.html). 
 
@@ -35,10 +32,8 @@ A.	The required perl packages
 	database can be asscced with the correct username and password.
 
 --------------------------------------------------------------------------------------------------------------------
-A.	The required perl packages
 C.	Tesing and Running examples
 --------------------------------------------------------------------------------------------------------------------
-A.	The required perl packages
 
 1.	Examples in the directory "expample" include two BioNetGen models (more such models can be found at 
 	http://bionetgen.org/index.php/Model_Examples) and two synthetic biological systems. 
@@ -46,7 +41,6 @@ A.	The required perl packages
 2.	Type in ../../src/Rulebase2011.pl {model_name}.model to run examples. 
 
 --------------------------------------------------------------------------------------------------------------------
-A.	The required perl packages
 D.	Please report bugs, problems or suggestions to liaochen1988@gmail.com.
 --------------------------------------------------------------------------------------------------------------------
 
