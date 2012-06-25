@@ -43,13 +43,13 @@ INSERT INTO rtc2_counter (name,reactant_patterns,product_patterns,is_reversible,
 	('transcription_pT7','@d:X1-r0085(rnap!+)-X2!>-b0014()-X3','r:X2','False','mass_action_1(0.5,#1)',NULL),
 
 	#	leaky expression of T7 promoter
-	#	('transcription_pT7_leakness','@d:X1-r0085(rnap)-X2!>-b0014()-X3','r:X2','False','mass_action_1(3.0e-4,#1)',NULL),
+	('transcription_pT7_leakness','@d:X1-r0085(rnap)-X2!>-b0014()-X3','r:X2','False','mass_action_1(0.0001,#1)',NULL),
 
 	#	pBAD promoter
 	('transcription_pBAD','@d:X1-i0500(arac1,arac2)-X2!>-b0014()-X3','r:X2','False','mass_action_1(0.1,#1)',NULL),
 
 	#	leaky expression of pBAD promoter
-	#('transcription_pBAD_leakness','@d:X1-i0500(arac1!+,arac2!+)-X2!>-b0014()-X3','r:X2','False','mass_action_1(0.0005,#1)',NULL),
+	('transcription_pBAD_leakness','@d:X1-i0500(arac1!+,arac2!+)-X2!>-b0014()-X3','r:X2','False','mass_action_1(0.0005,#1)',NULL),
 
 	#	constitutive promoter j23100
 	('transcription_j23100','@d:X1-j23100()-X2!>-b0014()-X3','r:X2','False','mass_action_1(1.5,#1)',NULL),

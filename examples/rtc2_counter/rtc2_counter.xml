@@ -10,20 +10,20 @@
       <species id="dna1" name="d:b0014*()-e0040*()-j01010*(rib~off)-r0085*(rnap)-b0014*()-i2032*(dna)-j01010*(rib~off)-j23100*()" compartment="Ecoli" initialConcentration="2.37304224015187e-09"/>
       <species id="dna2" name="d:b0014*()-j01008*()-i0500*(arac1!1,arac2!2).p:c0080(arab,dim!3,dna!1).p:c0080(arab,dim!3,dna!2)" compartment="Ecoli" initialConcentration="2.37304224015187e-09"/>
       <species id="s4" name="nb:i0003(arac)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s5" name="r:j01010(rib~off)-i2032(dna)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s6" name="p:c0080(arab,dim!1,dna).p:c0080(arab,dim!1,dna)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s7" name="d:b0014*()-j01008*()-i0500*(arac1,arac2)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s8" name="nb:i0003(arac!1).p:c0080(arab!1,dim!2,dna).p:c0080(arab,dim!2,dna)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s9" name="p:c0080(arab,dim,dna)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s10" name="r:j01008()" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s11" name="nb:i0003(arac!1).nb:i0003(arac!2).p:c0080(arab!1,dim!3,dna).p:c0080(arab!2,dim!3,dna)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s12" name="nb:i0003(arac!1).p:c0080(arab!1,dim,dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s5" name="r:j01010(rib~off)-e0040()" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s6" name="r:j01010(rib~off)-i2032(dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s7" name="p:c0080(arab,dim!1,dna).p:c0080(arab,dim!1,dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s8" name="d:b0014*()-j01008*()-i0500*(arac1,arac2)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s9" name="r:j01008()" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s10" name="nb:i0003(arac!1).p:c0080(arab!1,dim!2,dna).p:c0080(arab,dim!2,dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s11" name="p:c0080(arab,dim,dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s12" name="r:j01010(rib~on)-e0040()" compartment="Ecoli" initialConcentration="0"/>
       <species id="s13" name="r:j01010(rib~on)-i2032(dna)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s14" name="p:i2032(dna)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s15" name="d:b0014*()-e0040*()-j01010*(rib~off)-r0085*(rnap!1)-b0014*()-i2032*(dna)-j01010*(rib~off)-j23100*().p:i2032(dna!1)" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s16" name="r:j01010(rib~off)-e0040()" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s17" name="r:j01010(rib~on)-e0040()" compartment="Ecoli" initialConcentration="0"/>
-      <species id="s18" name="p:e0040()" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s14" name="nb:i0003(arac!1).nb:i0003(arac!2).p:c0080(arab!1,dim!3,dna).p:c0080(arab!2,dim!3,dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s15" name="nb:i0003(arac!1).p:c0080(arab!1,dim,dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s16" name="p:e0040()" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s17" name="p:i2032(dna)" compartment="Ecoli" initialConcentration="0"/>
+      <species id="s18" name="d:b0014*()-e0040*()-j01010*(rib~off)-r0085*(rnap!1)-b0014*()-i2032*(dna)-j01010*(rib~off)-j23100*().p:i2032(dna!1)" compartment="Ecoli" initialConcentration="0"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="NA" value="6.02e+23"/>
@@ -39,26 +39,28 @@
       <parameter id="dna2_init" value="0" constant="false"/>
       <parameter id="transp2_pout" value="0.2"/>
       <parameter id="transp2_pin" value="0.2"/>
-      <parameter id="rule11_k" value="1.5"/>
+      <parameter id="rule10_k" value="0.0001"/>
+      <parameter id="rule13_k" value="1.5"/>
       <parameter id="rule6_k" value="0.01"/>
-      <parameter id="rule19_k" value="0.35"/>
-      <parameter id="rule15_k" value="0.0706"/>
+      <parameter id="rule12_k" value="0.0005"/>
+      <parameter id="rule21_k" value="0.35"/>
+      <parameter id="rule16_k" value="0.07"/>
+      <parameter id="rule17_k" value="0.0706"/>
       <parameter id="rule1_k" value="100000000"/>
       <parameter id="rule4_k" value="0.1"/>
       <parameter id="rule5_k" value="71000000000"/>
-      <parameter id="rule10_k" value="0.1"/>
+      <parameter id="rule11_k" value="0.1"/>
+      <parameter id="rule15_kcat" value="7.6"/>
+      <parameter id="rule15_Km" value="0.0009"/>
+      <parameter id="rule18_k" value="0.167"/>
       <parameter id="rule2_k" value="10"/>
       <parameter id="rule3_k" value="1000000000"/>
-      <parameter id="rule13_Km" value="0.0009"/>
-      <parameter id="rule13_kcat" value="7.6"/>
-      <parameter id="rule16_k" value="0.167"/>
-      <parameter id="rule12_k" value="0.1"/>
+      <parameter id="rule14_k" value="0.1"/>
+      <parameter id="rule20_k" value="0.0015"/>
       <parameter id="rule7_k" value="2000000"/>
-      <parameter id="rule17_k" value="0.0056"/>
+      <parameter id="rule19_k" value="0.0056"/>
       <parameter id="rule8_k" value="0.06"/>
       <parameter id="rule9_k" value="0.5"/>
-      <parameter id="rule14_k" value="0.07"/>
-      <parameter id="rule18_k" value="0.0015"/>
       <parameter id="time" value="0" constant="false"/>
     </listOfParameters>
     <listOfRules>
@@ -192,7 +194,7 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule11_k </ci>
+              <ci> rule10_k </ci>
               <ci> dna1 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -200,12 +202,30 @@
         </kineticLaw>
       </reaction>
       <reaction id="r6" reversible="false">
+        <listOfProducts>
+          <speciesReference species="s6"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="dna1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule13_k </ci>
+              <ci> dna1 </ci>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r7" reversible="false">
         <listOfReactants>
           <speciesReference species="dna2"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s6"/>
           <speciesReference species="s7"/>
+          <speciesReference species="s8"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -219,31 +239,19 @@
           </math>
         </kineticLaw>
       </reaction>
-      <reaction id="r7" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s4"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> rule19_k </ci>
-              <ci> s4 </ci>
-              <ci> Ecoli </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
       <reaction id="r8" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s5"/>
-        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s9"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="dna2"/>
+        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule15_k </ci>
-              <ci> s5 </ci>
+              <ci> rule12_k </ci>
+              <ci> dna2 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -251,18 +259,13 @@
       </reaction>
       <reaction id="r9" reversible="false">
         <listOfReactants>
-          <speciesReference species="s6"/>
           <speciesReference species="s4"/>
         </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s8"/>
-        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule1_k </ci>
-              <ci> s6 </ci>
+              <ci> rule21_k </ci>
               <ci> s4 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -271,19 +274,14 @@
       </reaction>
       <reaction id="r10" reversible="false">
         <listOfReactants>
-          <speciesReference species="s6"/>
-          <speciesReference species="s4"/>
+          <speciesReference species="s5"/>
         </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s8"/>
-        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule1_k </ci>
-              <ci> s6 </ci>
-              <ci> s4 </ci>
+              <ci> rule16_k </ci>
+              <ci> s5 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -293,15 +291,11 @@
         <listOfReactants>
           <speciesReference species="s6"/>
         </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s9"/>
-          <speciesReference species="s9"/>
-        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule4_k </ci>
+              <ci> rule17_k </ci>
               <ci> s6 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -310,8 +304,67 @@
       </reaction>
       <reaction id="r12" reversible="false">
         <listOfReactants>
-          <speciesReference species="s6"/>
           <speciesReference species="s7"/>
+          <speciesReference species="s4"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s10"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule1_k </ci>
+              <ci> s7 </ci>
+              <ci> s4 </ci>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r13" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s7"/>
+          <speciesReference species="s4"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s10"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule1_k </ci>
+              <ci> s7 </ci>
+              <ci> s4 </ci>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r14" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s7"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s11"/>
+          <speciesReference species="s11"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule4_k </ci>
+              <ci> s7 </ci>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r15" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s7"/>
+          <speciesReference species="s8"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="dna2"/>
@@ -321,64 +374,7 @@
             <apply>
               <times/>
               <ci> rule5_k </ci>
-              <ci> s6 </ci>
               <ci> s7 </ci>
-              <ci> Ecoli </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r13" reversible="false">
-        <listOfProducts>
-          <speciesReference species="s10"/>
-        </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="s7"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> rule10_k </ci>
-              <ci> s7 </ci>
-              <ci> Ecoli </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r14" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s8"/>
-          <speciesReference species="s4"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s11"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> rule1_k </ci>
-              <ci> s8 </ci>
-              <ci> s4 </ci>
-              <ci> Ecoli </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r15" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s8"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s4"/>
-          <speciesReference species="s6"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> rule2_k </ci>
               <ci> s8 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -386,18 +382,17 @@
         </kineticLaw>
       </reaction>
       <reaction id="r16" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s8"/>
-        </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s12"/>
           <speciesReference species="s9"/>
         </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="s8"/>
+        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule4_k </ci>
+              <ci> rule11_k </ci>
               <ci> s8 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -406,72 +401,13 @@
       </reaction>
       <reaction id="r17" reversible="false">
         <listOfReactants>
-          <speciesReference species="s8"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s6"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> rule19_k </ci>
-              <ci> s8 </ci>
-              <ci> Ecoli </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r18" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s9"/>
-          <speciesReference species="s4"/>
+          <speciesReference species="s5"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="s12"/>
         </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> rule1_k </ci>
-              <ci> s9 </ci>
-              <ci> s4 </ci>
-              <ci> Ecoli </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r19" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s9"/>
-          <speciesReference species="s9"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s6"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <cn> 0.5 </cn>
-              <ci> rule3_k </ci>
-              <ci> s9 </ci>
-              <ci> s9 </ci>
-              <ci> Ecoli </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r20" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s5"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s13"/>
-        </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="s10"/>
+          <modifierSpeciesReference species="s9"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -481,16 +417,84 @@
                 <divide/>
                 <apply>
                   <times/>
-                  <ci> rule13_kcat </ci>
-                  <ci> s10 </ci>
+                  <ci> rule15_kcat </ci>
+                  <ci> s9 </ci>
                   <ci> s5 </ci>
                 </apply>
                 <apply>
                   <plus/>
-                  <ci> rule13_Km </ci>
+                  <ci> rule15_Km </ci>
                   <ci> s5 </ci>
                 </apply>
               </apply>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r18" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s6"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s13"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="s9"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> rule15_kcat </ci>
+                  <ci> s9 </ci>
+                  <ci> s6 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> rule15_Km </ci>
+                  <ci> s6 </ci>
+                </apply>
+              </apply>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r19" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s9"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule18_k </ci>
+              <ci> s9 </ci>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r20" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s10"/>
+          <speciesReference species="s4"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s14"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule1_k </ci>
+              <ci> s10 </ci>
+              <ci> s4 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -500,11 +504,15 @@
         <listOfReactants>
           <speciesReference species="s10"/>
         </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s4"/>
+          <speciesReference species="s7"/>
+        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule16_k </ci>
+              <ci> rule2_k </ci>
               <ci> s10 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -513,19 +521,18 @@
       </reaction>
       <reaction id="r22" reversible="false">
         <listOfReactants>
-          <speciesReference species="s11"/>
+          <speciesReference species="s10"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s4"/>
-          <speciesReference species="s8"/>
+          <speciesReference species="s11"/>
+          <speciesReference species="s15"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <cn type="integer"> 2 </cn>
-              <ci> rule2_k </ci>
-              <ci> s11 </ci>
+              <ci> rule4_k </ci>
+              <ci> s10 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -533,18 +540,17 @@
       </reaction>
       <reaction id="r23" reversible="false">
         <listOfReactants>
-          <speciesReference species="s11"/>
+          <speciesReference species="s10"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s12"/>
-          <speciesReference species="s12"/>
+          <speciesReference species="s7"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule4_k </ci>
-              <ci> s11 </ci>
+              <ci> rule21_k </ci>
+              <ci> s10 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -553,17 +559,18 @@
       <reaction id="r24" reversible="false">
         <listOfReactants>
           <speciesReference species="s11"/>
+          <speciesReference species="s4"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s8"/>
+          <speciesReference species="s15"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <cn type="integer"> 2 </cn>
-              <ci> rule19_k </ci>
+              <ci> rule1_k </ci>
               <ci> s11 </ci>
+              <ci> s4 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -571,37 +578,37 @@
       </reaction>
       <reaction id="r25" reversible="false">
         <listOfReactants>
-          <speciesReference species="s12"/>
+          <speciesReference species="s11"/>
+          <speciesReference species="s11"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s4"/>
-          <speciesReference species="s9"/>
+          <speciesReference species="s7"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule2_k </ci>
-              <ci> s12 </ci>
+              <cn> 0.5 </cn>
+              <ci> rule3_k </ci>
+              <ci> s11 </ci>
+              <ci> s11 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
         </kineticLaw>
       </reaction>
       <reaction id="r26" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s9"/>
-          <speciesReference species="s12"/>
-        </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s8"/>
+          <speciesReference species="s16"/>
         </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="s12"/>
+        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule3_k </ci>
-              <ci> s9 </ci>
+              <ci> rule14_k </ci>
               <ci> s12 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -611,18 +618,12 @@
       <reaction id="r27" reversible="false">
         <listOfReactants>
           <speciesReference species="s12"/>
-          <speciesReference species="s12"/>
         </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s11"/>
-        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <cn> 0.5 </cn>
-              <ci> rule3_k </ci>
-              <ci> s12 </ci>
+              <ci> rule16_k </ci>
               <ci> s12 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -630,26 +631,8 @@
         </kineticLaw>
       </reaction>
       <reaction id="r28" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s12"/>
-        </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s9"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> rule19_k </ci>
-              <ci> s12 </ci>
-              <ci> Ecoli </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r29" reversible="false">
-        <listOfProducts>
-          <speciesReference species="s14"/>
+          <speciesReference species="s17"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="s13"/>
@@ -658,7 +641,22 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule12_k </ci>
+              <ci> rule14_k </ci>
+              <ci> s13 </ci>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r29" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s13"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule17_k </ci>
               <ci> s13 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -667,14 +665,19 @@
       </reaction>
       <reaction id="r30" reversible="false">
         <listOfReactants>
-          <speciesReference species="s13"/>
+          <speciesReference species="s14"/>
         </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s10"/>
+          <speciesReference species="s4"/>
+        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule15_k </ci>
-              <ci> s13 </ci>
+              <cn type="integer"> 2 </cn>
+              <ci> rule2_k </ci>
+              <ci> s14 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -683,18 +686,17 @@
       <reaction id="r31" reversible="false">
         <listOfReactants>
           <speciesReference species="s14"/>
-          <speciesReference species="dna1"/>
         </listOfReactants>
         <listOfProducts>
+          <speciesReference species="s15"/>
           <speciesReference species="s15"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule7_k </ci>
+              <ci> rule4_k </ci>
               <ci> s14 </ci>
-              <ci> dna1 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -704,11 +706,15 @@
         <listOfReactants>
           <speciesReference species="s14"/>
         </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s10"/>
+        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule17_k </ci>
+              <cn type="integer"> 2 </cn>
+              <ci> rule21_k </ci>
               <ci> s14 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -720,14 +726,14 @@
           <speciesReference species="s15"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna1"/>
-          <speciesReference species="s14"/>
+          <speciesReference species="s11"/>
+          <speciesReference species="s4"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule8_k </ci>
+              <ci> rule2_k </ci>
               <ci> s15 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -735,17 +741,19 @@
         </kineticLaw>
       </reaction>
       <reaction id="r34" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s11"/>
+          <speciesReference species="s15"/>
+        </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s16"/>
+          <speciesReference species="s10"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="s15"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule9_k </ci>
+              <ci> rule3_k </ci>
+              <ci> s11 </ci>
               <ci> s15 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -753,17 +761,20 @@
         </kineticLaw>
       </reaction>
       <reaction id="r35" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s15"/>
+          <speciesReference species="s15"/>
+        </listOfReactants>
         <listOfProducts>
-          <speciesReference species="s5"/>
+          <speciesReference species="s14"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="s15"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule11_k </ci>
+              <cn> 0.5 </cn>
+              <ci> rule3_k </ci>
+              <ci> s15 </ci>
               <ci> s15 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -775,13 +786,13 @@
           <speciesReference species="s15"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna1"/>
+          <speciesReference species="s11"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule17_k </ci>
+              <ci> rule21_k </ci>
               <ci> s15 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -792,30 +803,12 @@
         <listOfReactants>
           <speciesReference species="s16"/>
         </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="s17"/>
-        </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="s10"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <apply>
-                <divide/>
-                <apply>
-                  <times/>
-                  <ci> rule13_kcat </ci>
-                  <ci> s10 </ci>
-                  <ci> s16 </ci>
-                </apply>
-                <apply>
-                  <plus/>
-                  <ci> rule13_Km </ci>
-                  <ci> s16 </ci>
-                </apply>
-              </apply>
+              <ci> rule20_k </ci>
+              <ci> s16 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
@@ -823,31 +816,33 @@
       </reaction>
       <reaction id="r38" reversible="false">
         <listOfReactants>
-          <speciesReference species="s16"/>
+          <speciesReference species="s17"/>
+          <speciesReference species="dna1"/>
         </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s18"/>
+        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule14_k </ci>
-              <ci> s16 </ci>
+              <ci> rule7_k </ci>
+              <ci> s17 </ci>
+              <ci> dna1 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
         </kineticLaw>
       </reaction>
       <reaction id="r39" reversible="false">
-        <listOfProducts>
-          <speciesReference species="s18"/>
-        </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="s17"/>
-        </listOfModifiers>
+        <listOfReactants>
+          <speciesReference species="s17"/>
+        </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule12_k </ci>
+              <ci> rule19_k </ci>
               <ci> s17 </ci>
               <ci> Ecoli </ci>
             </apply>
@@ -856,28 +851,71 @@
       </reaction>
       <reaction id="r40" reversible="false">
         <listOfReactants>
-          <speciesReference species="s17"/>
+          <speciesReference species="s18"/>
         </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna1"/>
+          <speciesReference species="s17"/>
+        </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule14_k </ci>
-              <ci> s17 </ci>
+              <ci> rule8_k </ci>
+              <ci> s18 </ci>
               <ci> Ecoli </ci>
             </apply>
           </math>
         </kineticLaw>
       </reaction>
       <reaction id="r41" reversible="false">
-        <listOfReactants>
-          <speciesReference species="s18"/>
-        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s5"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="s18"/>
+        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> rule18_k </ci>
+              <ci> rule9_k </ci>
+              <ci> s18 </ci>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r42" reversible="false">
+        <listOfProducts>
+          <speciesReference species="s6"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="s18"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule13_k </ci>
+              <ci> s18 </ci>
+              <ci> Ecoli </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r43" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s18"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> rule19_k </ci>
               <ci> s18 </ci>
               <ci> Ecoli </ci>
             </apply>
