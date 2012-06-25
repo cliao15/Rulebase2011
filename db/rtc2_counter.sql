@@ -42,9 +42,6 @@ INSERT INTO rtc2_counter (name,reactant_patterns,product_patterns,is_reversible,
 	#	T7 promoter
 	('transcription_pT7','@d:X1-r0085(rnap!+)-X2!>-b0014()-X3','r:X2','False','mass_action_1(0.5,#1)',NULL),
 
-	#	leaky expression of T7 promoter
-	('transcription_pT7_leakness','@d:X1-r0085(rnap)-X2!>-b0014()-X3','r:X2','False','mass_action_1(0.0001,#1)',NULL),
-
 	#	pBAD promoter
 	('transcription_pBAD','@d:X1-i0500(arac1,arac2)-X2!>-b0014()-X3','r:X2','False','mass_action_1(0.1,#1)',NULL),
 
